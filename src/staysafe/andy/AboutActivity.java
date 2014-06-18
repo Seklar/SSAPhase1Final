@@ -102,7 +102,7 @@ public class AboutActivity extends Activity implements OnClickListener {
 	{
 		AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
 		builder1.setTitle("WARNING");
-		builder1.setMessage("Please confirm you wish to contact Emergency Services (000). This feature should only be used in Emergency situations.");
+		builder1.setMessage("Please confirm you wish to contact Emergency Services ("+ phnumber +"). This feature should only be used in Emergency situations.");
         builder1.setCancelable(true);
         builder1.setPositiveButton("Continue",
                     new DialogInterface.OnClickListener() {

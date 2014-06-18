@@ -1,6 +1,13 @@
 <resources>
 
     <string name="app_name">Stay Safe Andy</string>
-    <string name="about_string_text">About Text</string>
+    <string name="about_string_text">In the modern world there are times where we don’t feel safe. 
+        You maybe in an unknown area, traveling on your own or at home.
+         This app is designed to connect you with family and friends in real time,
+          allowing them to track your movements but also allowing you to make them aware of just how safe,
+           or unsafe, you feel.
+</string>
+    <string name="about_string_text2">Programmed by: Nick Henry and Stuart Watt.</string>
+    <string name="about_string_text3">Designed by: Deirdre Hewett, Kai Jaeger, Kayla O'Keeffe and Declan Whife.</string>
 
 </resources>
