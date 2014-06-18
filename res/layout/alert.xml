@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:background="@drawable/splash_screen_1" >
+
+    <Button
+        android:id="@+id/btn_safe"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/are_you_ok"/>
+    	<!--    -->
+    
+	<TextView
+        android:id="@+id/safetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/btn_safe"
+		android:layout_centerHorizontal="true"
+        android:text="ARE YOU SAFE?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#B4D560" />
+
+</RelativeLayout>

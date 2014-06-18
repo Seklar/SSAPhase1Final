@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Preferences">
+    <PreferenceCategory
+        android:title="Emergency Services">
+    <EditTextPreference
+        android:key="pref_emservice"
+        android:title="Emergency Services Phone Number"
+        android:summary="Phone number used to call emergency services."
+        android:inputType="phone"
+        android:defaultValue="" />
+    </PreferenceCategory>
+     <PreferenceCategory
+        android:title="I.C.E. Contacts">
+        <EditTextPreference
+        android:key="pref_icecontact_prim_name"
+        android:title="Primary ICE Contact Name"
+        android:summary="This will be the name for the primary ICE Contact."
+        android:defaultValue="" />
+    <EditTextPreference
+        android:key="pref_icecontact_prim_num"
+        android:title="Primary ICE Contact Mobile Number"
+        android:summary="This will be used to send SMS details about the user location. Please ensure the number entered is a valid mobile number."
+        android:defaultValue=""
+        android:inputType="phone" />
+    </PreferenceCategory>
+</PreferenceScreen>

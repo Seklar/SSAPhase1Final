@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.test.FullscreenActivity" >
+
+
+	<!-- this is logo 3 -->
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="137dp"
+	    android:layout_height="67dp"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginTop="20dp"
+	    android:src="@drawable/s_s_a___s_s_a_1" />
+	
+    <!-- this is travel small button -->
+    <Button
+        android:id="@+id/travel_small"
+        android:layout_width="56dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/aboutscreen___travel_1"
+        android:onClick="TravelPage" />
+    
+    <!-- this is alarm text topbar -->
+    <Button
+        android:id="@+id/alarmstopbar"
+        android:layout_width="221dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/maps_bar_1" />
+    
+    <!-- this is ice contacts small button -->
+    <Button
+        android:id="@+id/ice_small"
+        android:layout_width="57dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="185dp"
+        android:background="@drawable/travel__contacts_1"
+        android:onClick="ContactPage" />
+    
+    <!-- this is maps small button -->
+    <Button
+        android:id="@+id/map_small"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/map_scr___map_btn_1" />
+    
+    <!-- this is call emergency small button -->
+    <Button
+        android:id="@+id/call_small"
+        android:layout_width="56dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="305dp"
+        android:background="@drawable/travel__callemergencyicon_1"
+        android:onClick="callEMServices" />
+
+    <!-- this is in danger text -->
+    <TextView
+        android:id="@+id/dangertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="425dp"
+        android:text="IN DANGER - Emergency"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+    
+    <!-- this is emergncy button -->
+    <Button
+        android:id="@+id/emergency"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/emergency_alert___emergency_bar_1"
+        android:onClick="callEMServices" />
+
+    <!-- this is about small button -->
+    <Button
+        android:id="@+id/about_small"
+        android:layout_width="56dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/travel__about_1"
+        android:onClick="AboutPage" />
+
+        <!-- this is travel small button -->
+    <Button
+        android:id="@+id/alarm_button"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="265dp"
+        android:background="@drawable/travel__alarms_1"
+        android:onClick="AlarmPage" />
+
+        <!-- this is the send location button -->
+    <Button
+        android:id="@+id/send_location_button"
+        android:layout_width="221dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/map_scr___send_btn_1"
+        android:onClick="SendLoc" />
+
+        <!-- this is change to map -->
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="221dp"
+		android:layout_height="198dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="150dp"
+        android:name="com.google.android.gms.maps.MapFragment"/>
+
+
+
+</FrameLayout>

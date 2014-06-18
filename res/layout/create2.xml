@@ -1,0 +1,293 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+    
+        <!-- travel screen 2 -->
+    <!-- this is logo 3 -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="137dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/s_s_a___s_s_a_1" />
+
+    <!-- this is travel small button -->
+
+    <Button
+        android:id="@+id/traveltopbar"
+        android:layout_width="221dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/travel_bar_1" />
+    
+    <!-- this is travel small button -->
+    <Button
+        android:id="@+id/travel_small"
+        android:layout_width="56dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/travel__travel_1"
+        android:onClick="TravelPage" />
+
+    <!-- this is ice contacts small button -->
+
+    <Button
+        android:id="@+id/ice_small"
+        android:layout_width="57dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="185dp"
+        android:background="@drawable/travel__contacts_1"
+        android:onClick="ContactPage" />
+
+    <!-- this is maps small button -->
+
+    <Button
+        android:id="@+id/map_small"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/travel__map_1"
+        android:onClick="MapPage" />
+
+    <!-- this is call emergency small button -->
+
+    <Button
+        android:id="@+id/call_small"
+        android:layout_width="56dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="305dp"
+        android:background="@drawable/travel__callemergencyicon_1"
+        android:onClick="callEMServices" />
+
+    <!-- this is in danger text -->
+
+    <TextView
+        android:id="@+id/dangertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="425dp"
+        android:text="IN DANGER - Emergency"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+    <!-- this is emergncy button -->
+    <Button
+        android:id="@+id/emergency"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/emergency_alert___emergency_bar_1"
+        android:onClick="callEMServices" />
+
+    <!-- this is about small button -->
+    <Button
+        android:id="@+id/about_small"
+        android:layout_width="56dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/travel__about_1"
+        android:onClick="AboutPage" />
+
+        <!-- this is alarms small button -->
+    <Button
+        android:id="@+id/alarm_small"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="265dp"
+        android:background="@drawable/travel__alarms_1"
+        android:onClick="AlarmPage" />
+
+            <!-- this is no. people text -->
+    <TextView
+        android:id="@+id/no_people_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="230dp"
+        android:text="No. People:"
+        android:textColor="#000000" />
+
+            <!-- this is no. people input -->
+
+    <EditText
+        android:id="@+id/no_people_input"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="215dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1" />
+
+        <!-- this is main ice contact text -->
+    <TextView
+        android:id="@+id/main_ice_default_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="258dp"
+        android:text="I.C.E. Contact 1 : "
+        android:textColor="#000000" />
+
+        <!-- this is mian ice input -->
+
+        <!-- this is safty intervals text  -->
+    <TextView
+        android:id="@+id/safety_intervals_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="192dp"
+        android:text="Safety Intervals:"
+        android:textColor="#000000" />
+    
+        <!-- this is safty intervals input  -->
+
+    <EditText
+        android:id="@+id/safety_intervals_input"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="5" >
+
+        <requestFocus />
+    </EditText>
+
+    <!-- this is message to text to ICE text -->
+
+    <!-- this is message to text to ICE  -->
+    
+       <!-- this is step 1 button dark  -->
+    <Button
+        android:id="@+id/step_1_light"
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="147dp"
+        android:background="@drawable/travel__btn___step_1__dark_1"
+        android:onClick="backButton" />
+    
+    	
+        <!-- this is submit button  -->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="212dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/travel_scr_2___submit_1"
+        android:onClick="Submit" />
+
+        <!-- this is step 2 button light  -->
+    <Button
+        android:id="@+id/step_2_dark"
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="222dp"
+        android:layout_marginTop="147dp"
+        android:background="@drawable/travel__btn___step_2__light_1"
+         />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="310dp"
+        android:text="I.C.E. Contact 2 :"
+        android:textColor="#000000" />
+    
+    <RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/create_radgroup_p2_2"
+    android:checkedButton="@+id/create_rad_btn1">
+    <RadioButton
+        android:id="@+id/create_rad_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="270dp"
+        android:text="Default"
+        android:textColor="#000000" />
+    <RadioButton
+        android:id="@+id/create_rad_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="270dp"
+        android:text=""
+        android:textColor="#000000" />
+   </RadioGroup>
+	<TextView
+        android:id="@+id/create_spn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="278dp"
+        android:text="Change"
+        android:textColor="#000000" />
+    
+	<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/create_radgroup_p2_1"
+    android:checkedButton="@+id/create_rad_btn3">
+    <RadioButton
+        android:id="@+id/create_rad_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="330dp"
+        android:text="None"
+        android:textColor="#000000" />
+    <RadioButton
+        android:id="@+id/create_rad_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="330dp"
+        android:text=""
+        android:textColor="#000000" />
+   </RadioGroup>
+		<TextView
+        android:id="@+id/create_spn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="338dp"
+		android:text="Change"
+        android:textColor="#000000" />
+    
+</FrameLayout>

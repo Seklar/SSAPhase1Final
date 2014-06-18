@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+<!--
+
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    
+-->
+<!--
+
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    
+-->
+<!--  this is logo  -->
+<ImageView 
+    android:id="@+id/imageView1" 
+    android:layout_width="137dp" 
+    android:layout_height="67dp" 
+    android:layout_marginLeft="25dp" 
+    android:layout_marginTop="20dp" 
+    android:src="@drawable/s_s_a___s_s_a_1"/>
+
+<!--  this is About button  -->
+<Button 
+    android:id="@+id/about" 
+    android:layout_width="310dp" 
+    android:layout_height="45dp" 
+    android:layout_marginLeft="26dp" 
+    android:layout_marginTop="105dp" 
+    android:background="@drawable/button__about_1"
+    android:onClick="AboutPage"/>
+
+<!--  this is travel button  -->
+<Button android:onClick="TravelPage" android:id="@+id/travel" android:layout_width="310dp" android:layout_height="45dp" android:layout_marginLeft="25dp" android:layout_marginTop="155dp" android:background="@drawable/button__travel_1"/>
+<!--  this is ice contacts button  -->
+<Button android:onClick="ContactPage" android:id="@+id/ice" android:layout_width="310dp" android:layout_height="45dp" android:layout_marginLeft="25dp" android:layout_marginTop="205dp" android:background="@drawable/button__i"/>
+<!--  this is maps button  -->
+<Button android:onClick="MapPage" android:id="@+id/map" android:layout_width="310dp" android:layout_height="45dp" android:layout_marginLeft="26dp" android:layout_marginTop="255dp" android:background="@drawable/button__map_1"/>
+<!--  this is alarms button  -->
+<Button android:onClick="AlarmPage" android:id="@+id/alarms" android:layout_width="310dp" android:layout_height="45dp" android:layout_marginLeft="26dp" android:layout_marginTop="305dp" android:background="@drawable/button__alarms_1"/>
+<!--  this is call emergency button  -->
+<Button android:onClick="callEMServices" android:id="@+id/call" android:layout_width="310dp" android:layout_height="45dp" android:layout_marginLeft="25dp" android:layout_marginTop="355dp" android:background="@drawable/button__call_emergency_1"/>
+<!--  this is in danger text  -->
+<TextView android:id="@+id/dangertext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="425dp" android:text="IN DANGER - Emergency" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#FF0000"/>
+<!--  this is emergncy button  -->
+<Button android:id="@+id/emergency" android:layout_width="360dp" android:layout_height="44dp" android:layout_marginLeft="-1dp" android:layout_marginTop="450dp" android:background="@drawable/emergency_alert___emergency_bar_1" android:onClick="callEMServices"/>
+</FrameLayout>
